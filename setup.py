@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+from distutils.core import setup
+
+setup(
+   name='authenticate',
+   version='0.1.0',
+   description='this module will help you authenticate to azure resources used in your python script',
+   author='Maurice de Jong',
+   author_email='maurice@deholanda.com',
+   packages=['authenticate'],  #same as name
+   install_requires=['adal', 'azure'], #external packages as dependencies
+)
