@@ -2,6 +2,7 @@ def keyvault(tenant):
     """
     Authenticate the end-user using device auth on Azure Keyvault
     """
+    import adal, uuid, time
     authority_host_uri = 'https://login.microsoftonline.com'
     
     authority_uri = authority_host_uri + '/' + tenant
@@ -20,6 +21,7 @@ def management(tenant):
     """
     Authenticate the end-user using device auth.
     """
+    import adal, uuid, time
     authority_host_uri = 'https://login.microsoftonline.com'
 
     authority_uri = authority_host_uri + '/' + tenant
