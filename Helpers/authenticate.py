@@ -1,9 +1,3 @@
-def whats_on_the_telly(penguin=None):
-    if penguin is None:
-        penguin = []
-    penguin.append("property of the zoo")
-    return penguin
-
 def keyvault(tenant):
     """
     Authenticate the end-user using device auth on Azure Keyvault
@@ -12,7 +6,7 @@ def keyvault(tenant):
     
     authority_uri = authority_host_uri + '/' + tenant
     resource_uri = 'https://vault.azure.net'
-    client_id = '04b07795-8ddb-461a-bbee-02f9e1bf7b46'
+    client_id = '04b07795-8ddb-461a-bbee-02f9e1bf7b46' #this identifies this request
 
     context = adal.AuthenticationContext(authority_uri, api_version=None)
     code = context.acquire_user_code(resource_uri, client_id)
@@ -30,7 +24,7 @@ def management(tenant):
 
     authority_uri = authority_host_uri + '/' + tenant
     resource_uri = 'https://management.core.windows.net/'
-    client_id = '04b07795-8ddb-461a-bbee-02f9e1bf7b46'
+    client_id = '04b07795-8ddb-461a-bbee-02f9e1bf7b46' #this identifies this request
 
     context = adal.AuthenticationContext(authority_uri, api_version=None)
     code = context.acquire_user_code(resource_uri, client_id)
