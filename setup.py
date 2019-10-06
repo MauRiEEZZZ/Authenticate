@@ -3,11 +3,11 @@
 from distutils.core import setup
 
 setup(
-   name='authenticate',
+   name='PythonAuthenticateAzure',
    version='0.1.2',
    description='this module will help you authenticate to azure resources used in your python script',
    author='Maurice de Jong',
    author_email='maurice@deholanda.com',
-   #packages=['authenticate'],  #same as name
+   packages=['PythonAuthenticateAzure'],  #same as name
    install_requires=['adal', 'azure'], #external packages as dependencies
 )
