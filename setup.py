@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
    name='Helpers',
-   version='0.1.8',
+   version='0.1.9',
    description='this module will help you authenticate to azure resources used in your python script',
    author='Maurice de Jong',
    author_email='maurice@deholanda.com',
